@@ -1,1 +1,126 @@
 
+<!DOCTYPE html>
+<html lang="sv">
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Inliven</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Menu JavaScript -->
+    <script>
+        function openMenu() {
+            document.getElementById("mainNav").style.width = "350px";
+            document.getElementById("openMenu").style.display = "none";
+        }
+
+        function closeMenu() {
+            document.getElementById("mainNav").style.width = "0";
+            document.getElementById("openMenu").style.display = "block";
+        }
+    </script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/c4348bcdca.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+
+</head>
+
+<body>
+    <!-- Page -->
+    <div id="page">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html" class="logo"><span>Inliven</span></a>
+            <!-- Menu -->
+            <div id="openMenu" onclick="openMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li>
+                        <div id="closeMenu" onclick="closeMenu()">
+                            <p>X</p>
+                        </div>
+                    </li><br><br><br>
+                    <li><a href="index.html">Home</a></li>
+                     <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Content -->
+        <div id="content">
+
+            <!-- Introduction section -->
+            <section id="introduction">
+                <img id="cover" src="cover3.jpg">
+                <h6 class="hide">Intro</h6>
+                <!-- Icons -->
+                <div id="icons">
+                    <i class="fab fa-twitter"></i><br><br>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </section>
+            <!-- About section -->
+            <section id="about">
+                <h2>About</h2>
+                <h4>There's always been a deep interest for designing and coding.</h4>
+                <p id="intro_text">The mix of being creative and solving problems is what drives me.</p>
+
+            </section>
+            <!-- Review -->
+            <section id="costumer">
+                <h2>Reviews</h2>
+                <!-- Review one -->
+                <article id="costumer-one">
+                    <h4 class="headline">"</h4>
+                    <p>It's been a joy to work on our project together and to be able to laugh so much.</p>
+                    <p class="name">Charlie C</p>
+                </article>
+                <!-- Review two -->
+                <article id="costumer-two">
+                    <h4 class="headline">"</h4>
+                    <p>Easy going and full of ideas, just what our team needed.</p>
+                    <p class="name">Evelina T</p>
+                </article>
+                <!-- Review three -->
+                <article id="costumer-three">
+                    <h4 class="headline">"</h4>
+                    <p>Fast and professional, our project got finished in time and we had so much fun.</p>
+                    <p class="name">Gabriel A</p>
+                </article>
+            </section>
+            <!-- Footer -->
+            <footer>
+              
+                <h2>Information</h2>
+                <div class="visit-us">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="bold-body">Visit</p>
+                    <p>Askeryd Säteri 1<br>578 93 Aneby</p>
+                </div>
+                <div class="contact-us">
+                    <i class="fas fa-phone-alt"></i>
+                    <p class="bold-body">Contact</p>
+                    <p>(+46) 760 30 85 88</p>
+                </div>
+                <div class="email-us">
+                    <i class="fas fa-envelope"></i>
+                    <p class="bold-body">Email</p>
+                    <a href="mailto:caroline@inliven.se">caroline@inliven.se</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
