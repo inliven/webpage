@@ -1,0 +1,752 @@
+/* Imported font */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,600,700&display=swap');
+
+/* Reset page */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* End of reset code */
+
+body,
+html {
+    margin: 0 auto;
+    font-family: 'Open sans', Arial, Sans-Serif;
+}
+
+
+/* INDEX  */
+
+
+/* Header / navigation */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: #fafafa;
+}
+
+.header .float {
+    float: left;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding: 40px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Open sans Condensed', sans-serif, arial;
+    font-size: 4.0vh;
+    font-weight: 200;
+}
+
+.header .logo span {
+    display: none;
+}
+
+
+/* Navigation - menu */
+
+#mainNav {
+    width: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#mainNav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.4em;
+    display: block;
+    transition: 0.3s;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    float: none;
+}
+
+#mainNav li {
+    padding-bottom: 0px;
+    float: none;
+}
+
+#mainNav a:hover {
+    text-decoration: none;
+    color: #707070;
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+#openMenu {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    cursor: pointer;
+}
+
+#closeMenu {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+#closeMenu:hover {
+    color: #707070;
+}
+
+
+/* Content */
+
+#content {
+    background-color: #fafafa;
+}
+
+
+/* Introduction section */
+
+#content #introduction {
+    padding: 0px 0px;
+    height: 700px;
+    background-image: url("cover.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#content #introduction #icons {
+    display: none;
+}
+
+
+/* About section */
+
+#intro_text {
+    text-align: center;
+}
+
+#content #about {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+}
+
+#content #about h2 {
+    padding: 30px 0px;
+    font-family: 'Open sans';
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+#content #about h4 {
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+}
+
+#content #about p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #000;
+}
+
+#content #about a {
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+}
+
+#content #about a:hover {
+    color: #ff7b31;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Review */
+
+#content #costumer {
+    padding: 80px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+#content #costumer h2 {
+    padding: 30px 0px;
+    font-family: 'Open sans';
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+#content #costumer .headline {
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Open sans', arial, sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+#content #costumer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #fff;
+}
+
+#content #costumer .name {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23px;
+    color: #fff;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+#content footer h2 {
+    padding: 30px 0px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto 0;
+}
+
+footer i {
+    margin-top: 60px;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: #000;
+}
+
+footer .bold-body {
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 3.5vh;
+    color: #000;
+}
+
+footer a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 3vh;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Media queries for mobile */
+
+@media only screen and (max-width: 768px) {
+    /* Navigation */
+    .header .menu-btn:checked~.menu {
+        padding-top: 30%;
+    }
+    /* INDEX */
+    .header .logo {
+        background-image: none;
+    }
+    .header .logo span {
+        display: block;
+        font-family: 'Open Sans Condensed';
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .header .menu-icon {
+        padding: 50px 50px;
+    }
+    #mainNav li {
+        padding-bottom: 20px;
+        float: none;
+    }
+    /* Introduction section */
+    #content #introduction {
+        padding: 0px 0px;
+        height: 250px;
+        background-image: url("./cover.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    #cover {
+        padding: 0px 0px;
+        height: 250px;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    /* About section */
+    #content #about {
+        padding: 10px 100px;
+    }
+    #content #about h4 {
+        padding: 60px 0px;
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+    #content #about p {
+        margin-bottom: 20px;
+    }
+    /* Footer */
+    footer {
+        padding: 80px 20px;
+        display: grid;
+        grid-template-columns: 35% 30% 10% 25%;
+        text-align: center;
+    }
+    footer h2 {
+        margin-bottom: 0px;
+        grid-column: 1/5;
+    }
+    footer .visit-us {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer .contact-us {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer .email-us {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer i {
+        margin-top: 50px;
+        padding: 20px 0px;
+        font-size: 22px;
+        color: #000;
+    }
+    footer .bold-body {
+        font-size: 16px;
+    }
+}
+
+
+/* Media queries for tablets */
+
+@media only screen and (min-width: 768px) {
+    /* Navigation */
+    .header .menu-btn:checked~.menu {
+        padding-top: 30%;
+    }
+    /* INDEX */
+    .header .logo {
+        background-image: none;
+    }
+    .header .logo span {
+        display: block;
+        font-family: 'Open Sans Condensed';
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .header .menu-icon {
+        padding: 50px 50px;
+    }
+    #cover {
+        padding: 0px 0px;
+        max-width: 100%;
+        max-height: 400px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #mainNav li {
+        padding-bottom: 20px;
+        float: none;
+    }
+    /* Introduction section */
+    #content #introduction {
+        padding: 0px 0px;
+        height: 400px;
+        background-image: url("./cover.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    #cover {
+        padding: 0px 0px;
+        height: 500px;
+        min-width: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    /* About section */
+    #content #about {
+        padding: 80px 100px;
+    }
+    #content #about h4 {
+        padding: 60px 0px;
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+    #content #about p {
+        margin-bottom: 20px;
+    }
+    /* Footer */
+    footer {
+        padding: 80px 20px;
+        display: grid;
+        grid-template-columns: 35% 30% 10% 25%;
+        text-align: center;
+    }
+    footer h2 {
+        margin-bottom: 0px;
+        grid-column: 1/5;
+    }
+    footer .visit-us {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer .contact-us {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer .email-us {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer i {
+        margin-top: 50px;
+        padding: 20px 0px;
+        font-size: 22px;
+        color: #000;
+    }
+    footer .bold-body {
+        font-size: 16px;
+    }
+}
+
+
+/* Media queries for desktop */
+
+@media only screen and (min-width: 1024px) {
+    /* INDEX */
+    /* Navigation */
+    .header li {
+        float: left;
+    }
+    .header .logo span {
+        font-size: 26px;
+        color: #333333;
+    }
+    .header li a {
+        padding: 40px 15px;
+        font-family: 'Open sans', arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+        text-decoration: none;
+    }
+    .header li a:hover {
+        color: #ff7b31;
+        transition: all 0.3s ease-in-out;
+    }
+    .header .menu {
+        clear: none;
+        max-height: none;
+        float: right;
+        margin-right: 25px;
+        text-transform: uppercase;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    #cover {
+        padding: 0px 0px;
+        max-width: 100%;
+        max-height: 700px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    /* Introduction section */
+    #content #introduction {
+        padding: 0px 0px;
+        height: 700px;
+        background-image: url("../img/headersmall.png");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    #content #introduction #icons {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+    }
+    #content #introduction #icons i {
+        padding-right: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+    /* About section */
+    #content #about {
+        padding: 80px 220px;
+    }
+    #content #about h2 {
+        font-size: 40px;
+    }
+    #content #about h4 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    /* Review section */
+    #content #costumer {
+        padding: 80px 80px;
+        display: grid;
+        grid-template-columns: 30% 5% 30% 5% 30%;
+    }
+    #content #costumer h2 {
+        padding: 30px 0px;
+        font-size: 40px;
+        grid-column: 1/6;
+    }
+    #content #costumer #costumer-one {
+        grid-column: 1/2;
+    }
+    #content #costumer #costumer-two {
+        grid-column: 3/4;
+    }
+    #content #costumer #costumer-three {
+        grid-column: 5/6;
+    }
+    #content #costumer .name {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    /* Footer */
+    footer {
+        padding: 100px 20px;
+        display: grid;
+        grid-template-columns: 10% 25% 30% 33%;
+        text-align: center;
+    }
+    footer h2 {
+        margin-bottom: 30px;
+        grid-column: 1/6;
+    }
+    footer .visit-us {
+        grid-column: 1/3;
+    }
+    footer .contact-us {
+        grid-column: 3/4;
+    }
+    footer .email-us {
+        grid-column: 4/5;
+    }
+}
+
+.hide {
+    display: none;
+}
