@@ -403,7 +403,7 @@ html {
 footer {
     padding: 80px 20px;
     background-color: #f4f4f4;
-    color: #red;
+    color: red;
 }
 
 #content footer h2 {
