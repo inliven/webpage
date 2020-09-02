@@ -672,6 +672,10 @@ footer a {
         background-repeat: no-repeat;
         position: relative;
     }
+        #mainNav li {
+        padding-bottom: 20px;
+        float: none;
+    }
     /* Introduction section */
     #content #introduction {
         padding: 0px 0px;
