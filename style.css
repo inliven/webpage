@@ -206,8 +206,8 @@ html {
     cursor: pointer;
     color: #000;
     text-decoration: none;
-    font-family: 'Open sans Condensed', sans-serif, arial;
-    font-size: 5.0vh;
+    font-family: 'Open sans', sans-serif, arial;
+    font-size: 6.0vh;
     font-weight: 400;
 }
 
@@ -639,9 +639,11 @@ footer a {
         float: left;
     }
     .header .logo span {
-        font-size: 36px;
+        font-size: 45px;
         color: #000;
         font-weight: 600;
+        letter-spacing: 0.01em;
+        font-weight: bold;
     }
     .header li a {
         padding: 20px 15px;
