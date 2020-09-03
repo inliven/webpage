@@ -206,9 +206,9 @@ html {
     cursor: pointer;
     color: #000;
     text-decoration: none;
-    font-family: 'poppins', sans-serif, arial;
+    font-family: 'open-sans', sans-serif, arial;
     font-size: 3.0vh;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .header .logo span {
@@ -641,8 +641,8 @@ footer a {
     .header .logo span {
         font-size: 3vh;
         color: #000;
-        font-family: 'poppins', 'arial', 'sans-serif';
-        font-weight: 200;
+        font-family: 'open-sans', 'arial', 'sans-serif';
+       
       
     
     }
