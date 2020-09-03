@@ -641,7 +641,9 @@ footer a {
     .header .logo span {
         font-size: 3vh;
         color: #000;
+        font-family: 'poppins', 'arial', 'sans-serif';
         font-weight: 200;
+        font-style: bold;
     
     }
     .header li a {
